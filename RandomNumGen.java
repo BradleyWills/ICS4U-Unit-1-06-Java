@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 /**
 * The RandomNumGen program implements an application that generates a random 
-* number based on the inputed max and evaluates if the user guesses it.
+* number based on the inputed max.
 *
 * @author  Bradley Wills
 * @version 1.0
