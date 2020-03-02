@@ -13,11 +13,14 @@ import java.util.Scanner;
 public class RandomNumGen {
   // Create variables 
   static int randomizedNum;
-  static int guesses;
   static int maxValueInput;
-  static boolean correct;
   
-  public static void RollDie(int maxValue) {
+  /**
+   * Generates a random number.
+   */
+  
+  
+  public static void rollDie(int maxValue) {
     Random randomizer = new Random();
     // Generate random number 1-maxValue
     randomizedNum = (randomizer.nextInt(maxValue)) + 1;
@@ -37,7 +40,7 @@ public class RandomNumGen {
     try {
       maxValueInput = Integer.parseInt(userInput.nextLine());
       // Calls the function
-      RollDie(maxValueInput);
+      rollDie(maxValueInput);
     } catch (Exception e) {
       // Informs the user that their input is invalid
       System.out.println("Invalid Input.");
